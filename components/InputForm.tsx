@@ -53,7 +53,6 @@ export function InputWithButton() {
       });
       setEmail("")
       setLoading(false)
-      localStorage.setItem('access',"true");
       router.push('/success/registration')
 
     }

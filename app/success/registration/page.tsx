@@ -3,40 +3,7 @@ import Link from 'next/link';
 import React, { useEffect } from 'react'
 import {AlertDialogDemo} from '@/components/Contact'
 
-
-const Exit = () => {
-  const access = localStorage.getItem('access');
-  console.log(access);
-
-
-
-  useEffect(() => {
-  
-    return () => {
-      if(localStorage.getItem('access')){
-        localStorage.removeItem('access')
-      }
-    }
-  }, [])
-  
-
-
-
-
-  if(!access){
-    return (
-      <div className='text-center flex flex-col gap-6'>
-    <div className='text-center text-5xl font-bold mt-14'>Something went wrong<span className='text-red-500'>!</span></div>
-    <Link className='underline underline-offset-2 text-gray-200 decoration-sky-500' href='/'>Go back</Link>
-    </div>
-    );
-    
-  }
-  
-
-  
-  
-  
+const Exit = () => {  
   return (
     <>
     <div className='text-center text-5xl font-bold mt-14'>Thank You!</div>
