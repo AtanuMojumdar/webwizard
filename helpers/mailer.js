@@ -20,7 +20,7 @@ async function sendMail(email){
         from : 'atanu19mojumdar@gmail.com',
         to: email,
         subject: "Testing",
-        html: "<p>Test is for testing purpose</p><br/> <a href='http://localhost:3000/howinternetworks.pdf'>Workshop Outline</a>"
+        html: "<p>Test is for testing purpose</p><br/> <a href='https://webwizard-omega.vercel.app/howinternetworks.pdf'>Workshop Outline</a>"
       }
     const mailresponse = await transporter.sendMail(mailOptions);
     return mailresponse;
