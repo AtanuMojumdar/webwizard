@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import {AlertDialogDemo} from '@/components/Contact'
 
+
 const Exit = () => {  
   return (
     <>
