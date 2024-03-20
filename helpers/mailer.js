@@ -19,8 +19,8 @@ async function sendMail(email){
     const mailOptions = {
         from : 'atanu19mojumdar@gmail.com',
         to: email,
-        subject: "Testing",
-        html: "<p>Test is for testing purpose</p><br/> <a href='https://webwizard-omega.vercel.app/howinternetworks.pdf'>Workshop Outline</a>"
+        subject: "WebWizard Registration",
+        html: "<p>Thanks for signing up for WebWizard</p> <a href='https://docs.google.com/forms/d/e/1FAIpQLScuGijufEPYqpIBDBUbYUUESWWAzOKX2bN6NP9lIp6p_iBEzQ/viewform?usp=sf_link'>Workshop Registration Link</a> <br/> <br/> <p>Other links:</p> <a href='https://webwizard-omega.vercel.app/webwizardworkshopbrief.pdf'>Workshop Brief</a> &nbsp; </br> <a href='https://webwizard-omega.vercel.app/webwizardposter.png'>Workshop Poster</a> &nbsp; </br> <a href='https://webwizard-omega.vercel.app/howinternetworks.pdf'>Workshop Outline</a>  "
       }
     const mailresponse = await transporter.sendMail(mailOptions);
     return mailresponse;
